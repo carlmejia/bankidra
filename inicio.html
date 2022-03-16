@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+        
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+            
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="material-icons" id="icon-menu">menu</i>
+        <i class="material-icons" id="icon-close">cancel</i>
+    </label>
+    <div class="sidebar">
+        <header>Bankidra</header>
+        <ul>
+           <li>
+            <a href="inicio.html" class="dropdown-btn">
+                <i class="material-icons">home</i>
+                Inicio
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="inicio.html"><i class="material-icons">dashboard</i>
+                    Inicio
+                </a>
+           </li>
+           <li>
+            <a class="dropdown-btn">
+                <i class="material-icons">people_alt</i>
+                Aspirantes
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="aspirantes.html"><i class="material-icons">checklist</i>
+                    Lista de Aspirantes
+                </a>
+           </li>
+           <li>
+            <a class="dropdown-btn">
+                <i class="material-icons">quiz</i>
+                Examenes
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="examen.html"><i class="material-icons">format_list_numbered</i>
+                    Control de Examenes
+                </a>
+                <a href="examen.html"><i class="material-icons">checklist</i>
+                    Gestión de Examenes
+                </a>
+           </li>
+           <li>
+            <a class="dropdown-btn">
+                <i class="material-icons">history_edu</i>
+                Contratos
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="contratos.html"><i class="material-icons">insert_drive_file
+                </i>
+                    Contratos
+                </a>
+           </li>
+           <li>
+            <a class="dropdown-btn">
+                <i class="material-icons">settings</i>
+                Configuración
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="configuracion.html"><i class="material-icons">settings_suggest
+                </i>
+                    Configuración
+                </a>
+                <a href="info.html"><i class="material-icons">contact_support
+
+                </i>
+                    Acerca de
+                </a>
+                <a href="perfil.html"><i class="material-icons">person</i>
+                    Perfil
+                </a>
+           </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="contenidos">
+            <div class="contenidos__texto">
+                <span>Mis actividades</span>
+                <hr class="contenedor__line contenedor__line--active"/>
+            </div>
+            <div class="contenidos__texto">
+                <span>Estadisticos</span>
+                <hr class="contenedor__line"/>
+            </div>
+            <div class="contenidos__texto">
+                <span>Resumen</span>
+                <hr class="contenedor__line"/>
+            </div>
+        </div>
+        <div class="table-container">
+            <!-- <h1 class="heading"> TABLE $USER</h1> -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Actividad</th>
+                        <th>Responsable asignado</th>
+                        <th>Proceso</th>
+                        <th>Observaciones</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Actividad">Lorem, ipsum dolor sit amet.</td>
+                        <td data-label="Responsable">consectetur adipisicing elit</td>
+                        <td data-label="Proceso">consectetur adipisicing elit</td>
+                        <td data-label="Observaciones">consectetur adipisicing elit</td>
+                        <td data-label="Estado"><span class="text-open text-open--asignada">Asignada</span></td>
+                        <td data-label="Acciones" class="contenedor__acciones">
+                            <a href="#" class="btn btn--revisar"><i class="material-icons">sell</i></a>
+                            <a href="#" class="btn btn--seguimiento"><i class="material-icons">model_training</i></a>
+                            <a href="#" class="btn btn--finalizar"><i class="material-icons">task_alt</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Actividad">Lorem, ipsum dolor sit amet.</td>
+                        <td data-label="Responsable">consectetur adipisicing elit</td>
+                        <td data-label="Proceso">consectetur adipisicing elit</td>
+                        <td data-label="Observaciones">consectetur adipisicing elit</td>
+                        <td data-label="Estado"><span class="text-open text-open--termina">Terminada</span></td>
+                        <td data-label="Acciones" class="contenedor__acciones">
+                            <a href="#" class="btn btn--revisar"><i class="material-icons">sell</i></a>
+                            <a href="#" class="btn btn--seguimiento"><i class="material-icons">model_training</i></a>
+                            <a href="#" class="btn btn--finalizar"><i class="material-icons">task_alt</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Actividad">Lorem, ipsum dolor sit amet.</td>
+                        <td data-label="Responsable">consectetur adipisicing elit</td>
+                        <td data-label="Proceso">consectetur adipisicing elit</td>
+                        <td data-label="Observaciones">consectetur adipisicing elit</td>
+                        <td data-label="Estado"><span class="text-open text-open--termina">Terminada</span></td>
+                        <td data-label="Acciones" class="contenedor__acciones">
+                            <a href="#" class="btn btn--revisar"><i class="material-icons">sell</i></a>
+                            <a href="#" class="btn btn--seguimiento"><i class="material-icons">model_training</i></a>
+                            <a href="#" class="btn btn--finalizar"><i class="material-icons">task_alt</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Actividad">Lorem, ipsum dolor sit amet.</td>
+                        <td data-label="Responsable">consectetur adipisicing elit</td>
+                        <td data-label="Proceso">consectetur adipisicing elit</td>
+                        <td data-label="Observaciones">consectetur adipisicing elit</td>
+                        <td data-label="Estado"><span class="text-open text-open--pendiente">Pendiente</span></td>
+                        <td data-label="Acciones" class="contenedor__acciones">
+                            <a href="#" class="btn btn--revisar"><i class="material-icons">sell</i></a>
+                            <a href="#" class="btn btn--seguimiento"><i class="material-icons">model_training</i></a>
+                            <a href="#" class="btn btn--finalizar"><i class="material-icons">task_alt</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td data-label="Actividad">Lorem, ipsum dolor sit amet.</td>
+                        <td data-label="Responsable">consectetur adipisicing elit</td>
+                        <td data-label="Proceso">consectetur adipisicing elit</td>
+                        <td data-label="Observaciones">consectetur adipisicing elit</td>
+                        <td data-label="Estado"><span class="text-open text-open--asignada">Asignada</span></td>
+                        <td data-label="Acciones" class="contenedor__acciones">
+                            <a href="#" class="btn btn--revisar"><i class="material-icons">sell</i></a>
+                            <a href="#" class="btn btn--seguimiento"><i class="material-icons">model_training</i></a>
+                            <a href="#" class="btn btn--finalizar"><i class="material-icons">task_alt</i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi perfil</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Preload -->
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+            
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"crossorigin="crossorigin" as="font">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+                
+        <link rel="preload" href="css/estilos.css" as="style">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="material-icons" id="icon-menu">menu</i>
+        <i class="material-icons" id="icon-close">cancel</i>
+    </label>
+    <div class="sidebar">
+        <header>Bankidra</header>
+        <ul>
+           <li>
+            <a href="inicio.html" class="dropdown-btn">
+                <i class="material-icons">home</i>
+                Inicio
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="perfil.html"><i class="material-icons">person</i>
+                    Perfil
+                </a>
+           </li>
+           <li>
+            <a class="dropdown-btn">
+                <i class="material-icons">people_alt</i>
+                Aspirantes
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="aspirantes.html"><i class="material-icons">checklist</i>
+                    Lista de Aspirantes
+                </a>
+           </li>
+           <li>
+            <a class="dropdown-btn">
+                <i class="material-icons">quiz</i>
+                Examenes
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="examen.html"><i class="material-icons">format_list_numbered</i>
+                    Control de Examenes
+                </a>
+                <a href="examen.html"><i class="material-icons">checklist</i>
+                    Gestión de Examenes
+                </a>
+           </li>
+           <li>
+            <a class="dropdown-btn">
+                <i class="material-icons">history_edu</i>
+                Contratos
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="contratos.html"><i class="material-icons">insert_drive_file
+                </i>
+                    Contratos
+                </a>
+           </li>
+           <li>
+            <a class="dropdown-btn">
+                <i class="material-icons">settings</i>
+                Configuración
+                <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
+              </a>
+              <div class="dropdown-container">
+                <a href="configuracion.html"><i class="material-icons">settings_suggest
+                </i>
+                    Configuración
+                </a>
+                <a href="info.html"><i class="material-icons">contact_support
+
+                </i>
+                    Acerca de
+                </a>
+           </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="card">
+            <div class="card__item">
+                <div class="card__content">
+                    <figure class="card__figure">
+                        <img src="/img/usr.png" alt="" class="card__img">
+                    </figure>
+                    <div class="card__texts">
+                        <h2 class="card__title">Titulo 1</h2>
+                        <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, aperiam earum autem, enim minima cum eum sequi officia quos illum tempora sed voluptatibus quo! Aperiam mollitia quaerat dolor reprehenderit voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__content">
+                    <!-- <figure class="card__figure">
+                        <img src="" alt="" class="card__img">
+                    </figure> -->
+                    <div class="card__texts">
+                        <h4 class="card__title">Titulo 1</h4>
+                        <form class="formulario card__formulario--profile">
+                            <label class="formulario__label" for="email">Email</label>
+                            <input class="formulario__input" type="email" id="email">
+                            <label class="formulario__label" for="formulario__label">Password</label>
+                            <input class="formulario__input"type="password" id="password">
+                            <input type="submit" id="submit" value="Actualizar">
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

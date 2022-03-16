@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iniciar Sesión</title>
+        <meta name="description" content="Página web de para Bakindra">
+    
+        <!-- Prefetch -->
+    
+        <!-- Preload -->
+        <link rel="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+    
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link rel="preload" href="css/estilos.css" as="style">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="container__image">
+            <img src="img/MINSAIT.jpg" alt="imagen-login" class="img-bg">
+        </div>
+    
+        <div class="content-data">
+            
+            <div class="formulario">
+                <div class="formulario__text">
+                    <h3 class="centrar-texto centrar-texto--o">Bienvenido  de  Nuevo</h3>
+                    <hr class="contenedor__line"/>
+                </div>
+          
+                <h2>Iniciar sesión</h2>
+                <form method="get" action="bienvenida.html">
+                    <div class="formulario__campos">
+                        <span>Nombre de usuario</span>
+                        <input class="formulario__input" type="text" name="" placeholder="Ingrese su nombre de usuario...">
+                    </div>
+                    <div class="formulario__campos">
+                        <span>Contraseña</span>
+                        <input class="formulario__input" type="password" name="" placeholder="Ingrese su contraseña...">
+                    </div>
+                    <div class="formulario__remember">
+                        <label for=""><input type="checkbox" class="remember__check"><span class="remember__text"> Recordar usuario</span></label>
+                    </div>
+                    <div class="formulario__remember">
+                        <label for=""><input type="checkbox" class="remember__check"><span class="remember__text">Aceptar terminos y condiciones</span> </label>
+                    </div>
+                    <div class="formulario__campos">
+                        <input type="submit" name="" class="formulario__btn" value="Entrar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
