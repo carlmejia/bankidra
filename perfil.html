@@ -34,8 +34,8 @@
                 <i class="material-icons" id="arrow-icon">keyboard_arrow_down</i>
               </a>
               <div class="dropdown-container">
-                <a href="perfil.html"><i class="material-icons">person</i>
-                    Perfil
+                <a href="inicio.html"><i class="material-icons">dashboard</i>
+                    Inicio
                 </a>
            </li>
            <li>
@@ -91,6 +91,9 @@
                 </i>
                     Acerca de
                 </a>
+                <a href="perfil.html"><i class="material-icons">person</i>
+                    Perfil
+                </a>
            </li>
         </ul>
     </div>
@@ -99,10 +102,13 @@
             <div class="card__item">
                 <div class="card__content">
                     <figure class="card__figure">
-                        <img src="/img/usr.png" alt="" class="card__img">
+                        <span class="card__locate">México, Ciudad de México</span>
+                        <span class="card__locate card__locate--right">Desarrollador Frontend</span>
+                        <img src="img/user.png" alt="" class="card__img">
                     </figure>
+                    
                     <div class="card__texts">
-                        <h2 class="card__title">Titulo 1</h2>
+                        <h4 class="card__title">Carl Mejia</h4>
                         <p class="card__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, aperiam earum autem, enim minima cum eum sequi officia quos illum tempora sed voluptatibus quo! Aperiam mollitia quaerat dolor reprehenderit voluptatum.</p>
                     </div>
                 </div>
@@ -113,13 +119,19 @@
                         <img src="" alt="" class="card__img">
                     </figure> -->
                     <div class="card__texts">
-                        <h4 class="card__title">Titulo 1</h4>
+                        <h4 class="card__title">información personal</h4>
                         <form class="formulario card__formulario--profile">
+                            <label class="formulario__label" for="nombre">Nombre(s)</label>
+                            <input class="formulario__input" type="text" id="nombre" value="Carlos Alberto">
+                            <label class="formulario__label" for="apellidos">Apellidos</label>
+                            <input class="formulario__input"type="text" id="apellidos" value="Mejia Ramos">
+                            <label class="formulario__label" for="edad">Edad</label>
+                            <input class="formulario__input"type="number" id="edad" value="20">
                             <label class="formulario__label" for="email">Email</label>
-                            <input class="formulario__input" type="email" id="email">
-                            <label class="formulario__label" for="formulario__label">Password</label>
-                            <input class="formulario__input"type="password" id="password">
-                            <input type="submit" id="submit" value="Actualizar">
+                            <input class="formulario__input"type="email" id="email" value="camejiar@minsait.com">
+                            <label class="formulario__label" for="email">Telefono</label>
+                            <input class="formulario__input"type="number" id="telefono" value="5554897860">
+                            <a href="#" class="boton boton--primario">Actualizar</a>
                           </form>
                     </div>
                 </div>
